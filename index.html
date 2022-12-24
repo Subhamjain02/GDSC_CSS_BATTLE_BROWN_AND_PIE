@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+        display: flex;
+        margin-top: 30vh;
+        justify-content: center;
+       }
+        .main{
+            width: 400px;
+            height: 300px;
+            background-color: #A14634;
+            display: flex;
+            align-items: center;
+        }
+        .scircle{
+            width: 50px;
+            height: 100px;
+            background-color: #D9D33D;
+            border-radius: 0px 75px 75px 0px;
+        }
+
+        .circle{
+            width: 100px;
+            height: 100px;
+            margin-left:-50px;
+            border-radius: 50%;
+            background-color: #D9D33D;
+        }
+        .last{
+            transform: rotateY(180deg);
+            margin-left: -50px;
+        }
+        .c1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+        }
+        .moon{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #D9D33D;
+            box-shadow: inset 25px 6px 0px 3px #A14634;
+        }
+        .ellipse{
+            width: 350px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #A14634;
+            
+        
+        }
+        .m1{
+           
+            box-shadow: inset -25px -6px 0px 3px #A14634;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+        <div class="scircle"></div>
+        <div class="circle c1">
+            <div class="moon">
+            </div>
+        </div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle c1">
+            <div class="moon m1">
+            </div>
+        </div> 
+        <div class="scircle last"></div>
+    </div>
+
+</body>
+</html>
